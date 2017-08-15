@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- Here we have added the namespace above and called the annotation config which
+tells that we are going to use annotataions , then we have a component scan that scans for
+annotations specifically stereotypes and autowired annotation within the base package 
+given as com.pluralsight-->
+<context:annotation-config></context:annotation-config>
+<context:component-scan base-package="com.pluralsight"></context:component-scan>
+
+</beans>
